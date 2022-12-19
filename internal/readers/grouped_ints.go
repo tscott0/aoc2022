@@ -20,7 +20,7 @@ import (
 func GroupedInts(filename string) [][]int {
 	output := [][]int{}
 
-	readFile, err := os.Open("input/01.txt")
+	readFile, err := os.Open(filename)
 	if err != nil {
 		fmt.Println(err)
 	}
